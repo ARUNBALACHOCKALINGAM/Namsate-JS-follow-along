@@ -41,3 +41,20 @@ let b = 100;
 
 console.log(b); // shadows the b inside the block scope
 
+
+// Functional scope
+
+function example() {
+    if (true) {
+      let y = 10;
+      var x = 10; // x is accessible within the entire function
+    }
+  
+    console.log(x); // Accessible, because x is in the function scope
+    console.log(y);
+  }
+  
+example(); // Output: 10
+
+
+
